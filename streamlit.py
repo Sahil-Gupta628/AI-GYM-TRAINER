@@ -1,26 +1,13 @@
 import streamlit as st
-from streamlit_webrtc import webrtc_streamer #https://github.com/whitphx/streamlit-webrtc
-
-#import mediapipe as mp
-#import cv2
+from streamlit_webrtc import webrtc_streamer
 import numpy as np
 import matplotlib.pyplot as plt
-#import mediapipe
-
-# draw landmarks & connections to screen
-#mp_drawing = mp.solutions.drawing_utils
-# import Pose model
-#mp_pose = mp.solutions.pose
-
-#https://github.com/whitphx/streamlit-webrtc-example/blob/main/app.py
 
 st.set_page_config(page_title='A.I. Gym Trainer', page_icon="🏋️‍♂️", layout="centered",menu_items={
-         #'Get Help': 'https://www.extremelycoolapp.com/help',
-         #'Report a bug': "https://www.extremelycoolapp.com/bug",
          'About': "This program is a Monash University final year project completed by Kai Lin Wong, Eu Yang Chai and Kee Hong Tan; under the supervision of Dr Raphael Phan; completed in year 2021. \n This Streamlit app is built by Kai Lin Wong: https://www.linkedin.com/in/kai-lin-wong31/ \nGithub link: https://github.com/kailinwng/AI_Gym_Trainer_Python"
      })
 
-st.title ("A.I. Gym Trainer 🏋️‍♂️")
+st.title ("A.I. Gym Trainer")
 st.markdown("Hello there, thank you for using our AI gym trainer program.")
 st.markdown("\nJust like a personal gym trainer, this program helps you keep track of the number of exercise repetition you performed, along with a pose correction feedback mechanism to correct your pose if needed. ✔️")
 st.markdown("\nAt the end of your exercise, a chart will display your performance throughout the exercise. 📈")
@@ -52,6 +39,3 @@ st.metric(label="Calories Burned", value="0", delta="1")
 if st.button("Stop exercise."):
   st.balloons()
   st.success("You did it!")
-  
-
-  

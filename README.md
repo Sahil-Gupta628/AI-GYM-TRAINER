@@ -23,33 +23,21 @@ typing_extensions (v4.1.1): For supporting type hints in Python.
 
 # Installation
 Clone the repository:
-
-bash
-Copy
-Edit
 git clone https://github.com/Sahil-Gupta628/AI-GYM-TRAINER.git
 cd AI-GYM-TRAINER
-Set up a virtual environment:
 
-bash
-Copy
-Edit
+Set up a virtual environment:
 python -m venv venv
 source venv/bin/activate    # For Linux/MacOS
 venv\Scripts\activate       # For Windows
-Install the required dependencies:
 
-bash
-Copy
-Edit
+Install the required dependencies:
 pip install -r requirements.txt
+
 How to Run
 Start the application using Streamlit:
-
-bash
-Copy
-Edit
 streamlit run app.py
+
 Open the link provided in your terminal (usually http://localhost:8501/) to access the AI Gym Trainer interface.
 
 Follow the instructions in the app to start your workout session.
